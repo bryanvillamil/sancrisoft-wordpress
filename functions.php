@@ -5,6 +5,13 @@ function sancrisoft_files() {
   wp_enqueue_style('font-awesome', '//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
   // wp_enqueue_style('university_main_styles', get_stylesheet_uri());
   wp_enqueue_style( 'style', get_stylesheet_uri(), array(), '1.0.0', 'all' );
+
+  wp_register_style( 'flexslider', get_template_directory_uri() . '/slider/flexslider.css', array(), '2.1');
+  wp_enqueue_style('flexslider');
+
+  wp_register_script( 'flexslider', get_template_directory_uri() . '/slider/jquery.flexslider.min.js', array('jquery'), '2.1');
+  wp_enqueue_script('flexslider');
+
   wp_enqueue_script( 'script', get_template_directory_uri() . '/script.js');
 }
 
@@ -13,7 +20,8 @@ add_action('wp_enqueue_scripts', 'sancrisoft_files');
 function sancrisoft_features() {
   // add custom logo
   add_theme_support('custom-logo');
-  
+  add_theme_support('post-thumbnails');
+  add_image_size('slides', 900, 400, true);
   add_theme_support('title-tag');
 }
 
