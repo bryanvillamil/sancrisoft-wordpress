@@ -1,0 +1,44 @@
+.header {
+  background: red;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+  &__container {
+    max-width: 90%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+  }
+  &__logo {
+    h1 {
+      a {
+        display: flex;
+        align-items: center;
+        img {
+          width: 200px;
+          object-fit: contain;
+          object-position: center;
+        }
+      }
+    }
+  }
+  &__menu {
+    display: flex;
+    color: white;
+    align-items: center;
+    li {
+      font-size: 1.6rem;
+    }
+  }
+}
