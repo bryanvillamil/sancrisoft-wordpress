@@ -21,8 +21,13 @@ function sancrisoft_features() {
   // add custom logo
   add_theme_support('custom-logo');
   add_theme_support('post-thumbnails');
-  add_image_size('slides', 900, 400, true);
+  add_image_size( 'example_name_3', 50, 50, true );
   add_theme_support('title-tag');
 }
 
 add_action('after_setup_theme', 'sancrisoft_features');
+
+add_action('get_header', 'my_filter_head');
+function my_filter_head() {
+remove_action('wp_head', '_admin_bar_bump_cb');
+}

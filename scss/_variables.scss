@@ -1,0 +1,67 @@
+@font-face {
+  font-family: 'LatoRegular';
+  src:  url('./fonts/lato/lato-regular-font.ttf');
+  src:  url('./fonts/lato/lato-regular-font.eot') format('embedded-opentype'), 
+        url('./fonts/lato/lato-regular-font.woff2') format('woff2'), 
+        url('./fonts/lato/lato-regular-font.woff') format('woff'), 
+        url('./fonts/lato/lato-regular-font.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoBold';
+  src:  url('./fonts/lato/lato-bold-font.ttf');
+  src:  url('./fonts/lato/lato-bold-font.eot') format('embedded-opentype'), 
+        url('./fonts/lato/lato-bold-font.woff2') format('woff2'), 
+        url('./fonts/lato/lato-bold-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'LatoLight';
+  src:  url('./fonts/lato/lato-light-font.ttf');
+  src:  url('./fonts/lato/lato-light-font.eot') format('embedded-opentype'), 
+        url('./fonts/lato/lato-light-font.woff2') format('woff2'), 
+        url('./fonts/lato/lato-light-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Lato';
+  src:  url('./fonts/lato/lato-medium-font.ttf');
+  src:  url('./fonts/lato/lato-medium-font.eot') format('embedded-opentype'), 
+        url('./fonts/lato/lato-medium-font.woff2') format('woff2'), 
+        url('./fonts/lato/lato-medium-font.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+	font-family: "Averta";
+	src: url("./fonts/averta/avertastandard-regular-webfont.eot") format("eot"),
+		 url("./fonts/averta/avertastandard-regular-webfont.woff2") format("woff2"),
+		 url("./fonts/averta/avertastandard-regular-webfont.woff") format("woff"),
+     url("./fonts/averta/avertastandard-regular-webfont.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+// Fonst
+$latoRegular: "LatoRegular";
+$latoBold: "LatoBold";
+$latoLight: "LatoLight";
+$lato: "Lato";
+$averta: "Averta";
+
+
+//Media Querys
+$xs: "420px";
+$sm: "568px";
+$md: "768px";
+$lg: "1024px";
+$xl: "1200px";
+$xxl: "1500px";
